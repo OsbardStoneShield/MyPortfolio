@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper, .portfolio{ 
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: aliceblue;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand {
+    margin-top: -10px;
+}
+
+.brand span {
+    color:cyan;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.menu .active{
+ color: cyan;   
+}
+
+.menu a:hover{
+   background-color: cyan; 
+   color: #191c32;
+   transition: ease-in .4s;
+}
+
+main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+span {
+    color: cyan;
+}
+
+.download-cv{
+    padding: 10px 20px;
+    background-color: cyan;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(52, 202, 182, 0.582);
+}
+
+.download-cv:hover{
+    background-color: aliceblue;
+    box-shadow: none;
+}
+
+.skills {
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+.skills__info {
+    width: 100vh;
+    padding: 5em;
+}
+
+.skills__info h2{
+    font-size: 2.5em;
+    padding: 0px;
+}
+
+.skills .container {
+    width: 80vh;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card__skills{
+    width: 300px;
+    height: 350px;
+    margin: 1em;
+}
+
+.skills__img {
+    width: 100%;
+    height: 150px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.skills__img img{
+    width: 150px;
+    height: 150px;
+}
+
+.card__title__skills{
+    text-align: center;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: cyan;
+    margin-top: 3px;
+    margin-bottom: 2em;
+}
+.portfolio{
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-headings{
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em;
+}
+
+.portfolio-headings h2{
+    font-size: 2.5em;
+}
+
+.portfolio .container{
+    width: 80vh;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 350px;
+    background-color: #1f2446;
+    margin: 1em;
+}
+
+.card__img{
+    width: 100%;
+    height: 150px;
+    background-image:url(../MiPortafolio/Calculadora.png);
+    background-size: cover;
+}
+
+.card__title {
+    padding: 20px;
+
+}
+
+.card__proyect-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.proyect__icons {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    filter: invert(100);
+}
+
+.proyect__details{
+    display: flex;
+    justify-content: center; 
+    width: 100% ;
+    margin-top: 1em;
+}
+
+.card__proyect-details a {
+    text-decoration: none;
+    color: #191c32;
+    text-transform: uppercase;
+}
+
+.contact__section{
+
+    padding: 3em;
+    margin: 0 auto;
+}
+
+.contact__headings h2{
+    font-size: 2.5em;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em ;
+}
+
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: #191c32;
+    border: none;
+    border-bottom: 2px solid cyan ;
+    color: #fff;
+}
+
+.form textarea {
+    height: 10em;
+    background: #191c32;
+    color: #fff;
+    padding: 1.5em;
+    border: 2px solid cyan ;
+}
+
+.btn-sumbit{
+    padding: 10px 20px;
+    margin: 1em;
+    background: #1f2446;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-sumbit:hover{
+    background-color: cyan;
+    color: #000;
+    transition: ease-in 0.3s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background: cyan;
+}
+
+.content__footer h2 {
+    font-size: 3em;
+}
+
+.content__footer h5 {
+    font-size: 1.5em;
+    text-align-last: center
+}
+
+.social__network {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+.social__icons {
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px;
+    filter: none;
+}
+
